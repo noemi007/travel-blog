@@ -1,0 +1,52 @@
+@media screen and (max-width:600px) {
+  /* ****************************
+pickup
+**************************** */
+#pickup {
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+#pickup article {
+  max-width: 100%;
+}
+
+/* ****************************
+container
+**************************** */
+.container {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 80px;
+}
+
+/* ****************************
+main
+**************************** */
+#main {
+  max-width: 100%;
+}
+
+/* ****************************
+aside
+**************************** */
+#aside {
+  max-width: 100%;
+  padding: 0 16px;
+}
+
+/* ****************************
+footer
+**************************** */
+.footer-inner {
+  flex-direction: column;
+}
+
+.footer-item {
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+
+
+}

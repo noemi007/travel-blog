@@ -1,0 +1,287 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+ 
+html {
+  font-size: 100%;
+}
+ 
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 0.875rem;
+  color: #333;
+}
+ 
+img {
+  max-width: 100%;
+}
+ 
+a {
+  text-decoration: none;
+  color: #333;
+}
+ 
+ 
+li {
+  list-style: none;
+}
+ 
+.wrapper {
+  max-width: 1200px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+ 
+.sec-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.readmore a {
+  position: relative;
+  padding-bottom: 1px;
+  color: #333;
+}
+
+.readmore a::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: #333;
+  transition: all 200ms ease;
+}
+
+.readmore a:hover::after {
+  opacity: 0;
+  transform: tranlateY(3px);
+}
+ 
+
+/* ****************************
+header
+**************************** */
+.site-title {
+  width: 100%;
+  height: 30px;
+}
+
+.logo {
+  width: 200px;
+  height: 80px;
+  line-height: 1;
+  padding: 8px 0;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+header nav {
+  background-color: #333;
+  width: 100vw;
+  height: 41px;
+  margin-top: 16px;
+}
+
+header nav ul {
+  display: flex;
+  line-height: 41px;
+}
+
+header nav ul li {
+  margin-right: 60px;
+}
+header nav ul li a {
+  color: #fff;
+}
+
+/* ****************************
+pickup
+**************************** */
+#pickup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+#pickup article {
+  max-width: 32%;
+}
+
+#pickup .pickup-text {
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+#pickup article .readmore {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 24px;
+}
+
+/* ****************************
+container
+**************************** */
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+/* ****************************
+main
+**************************** */
+#main {
+  max-width: 65%;
+}
+
+#main article {
+  margin-bottom: 80px;
+}
+
+#main .meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+#main .main-text {
+  width: 80%;
+  margin-top: 16px;
+  margin: 0 auto;
+}
+
+#main .readmore {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* ****************************
+aside
+**************************** */
+#aside {
+  max-width: 33%;
+  padding: 0 16px;
+}
+
+#aside .author {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+#aside .author img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#aside .name {
+  font-weight: 500;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#aside .profile {
+  margin-top: 30px;
+}
+
+#aside .ranking-archive {
+  width: 100%;
+  margin:80px 0 45px 0;
+}
+
+.ranking-archive .s-title {
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.ranking-archive article {
+  margin-bottom: 56px;
+}
+
+.ranking-archive ul li {
+  padding: 16px 0;
+  border-bottom: solid 1px #333;
+}
+
+/* ****************************
+footer
+**************************** */
+footer {
+  width: 100%;
+  background-color: #F7F7F7;
+  padding-top: 50px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  width: 32%;
+}
+
+.footer-item .s-title {
+  margin-bottom: 32px;
+}
+
+.footer-item .about-text {
+  margin-bottom: 20px;
+}
+
+.footer-item .menu li{
+  border-top: solid 1px #777;
+  padding: 16px 0;
+  margin-bottom: 10px;
+}
+
+.footer-item .menu li:last-child {
+  border-bottom: solid 1px #777;
+}
+
+
+
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 60px;
+}
+
+/* 三角形 */
+footer ul.about-list .arrow {
+  position: relative;
+  display: inline-block;
+  padding-left: 12px;
+  color: #333;
+}
+/*
+疑似要素で三角矢印を表示
+border～プロパティで三角を作り、positionで位置調整
+*/
+footer ul.about-list .arrow::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #333;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+}
